@@ -21,6 +21,11 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
+                xui.create("xui.Timer")
+                .setHost(host,"xui_timer1")
+            );
+            
+            append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button3")
                 .setLeft("22.857142857142858em")
